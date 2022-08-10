@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
-    @GetMapping
+    @GetMapping("hello")
     public String hello(Model model) {
-        model.addAttribute("data", "hello!!");
+        model.addAttribute("data", "spring!!");
         return "hello";
     }
 
@@ -39,10 +39,12 @@ public class HelloController {
         private String name;
 
         public String getName() {
+
             return name;
         }
 
         public void setName(String name) {
+
             this.name = name;
         }
     }

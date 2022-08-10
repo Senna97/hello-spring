@@ -3,6 +3,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
 	id 'java'
 }
+// gradle: 버전 설정과 라이브러리 가져오기
 
 group = 'hello'
 version = '0.0.1-SNAPSHOT'
@@ -12,6 +13,7 @@ sourceCompatibility = '11'
 repositories {
 	mavenCentral()
 }
+// 라이브러리 다운에 대한 설정
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
